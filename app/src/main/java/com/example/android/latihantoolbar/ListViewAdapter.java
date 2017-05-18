@@ -47,6 +47,7 @@ public class ListViewAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.item_list_view, null);
         }
         ImageView imageView = (ImageView) view.findViewById(R.id.image_view);
+
         TextView txtNama = (TextView) view.findViewById(R.id.tv_nama);
         txtNama.setText(contact.getNama());
         TextView txtNoHp = (TextView) view.findViewById(R.id.tv_noHP);

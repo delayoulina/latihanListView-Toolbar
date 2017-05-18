@@ -29,21 +29,28 @@ public class MainActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
+        getSupportActionBar().setTitle("Findco");
+        myToolbar.setSubtitle("Tugas 3");
+        myToolbar.setLogo(R.mipmap.ic_launcher_round);
+
 //        textView = (TextView) findViewById(R.id.textView);
 
         lvContact = (ListView) findViewById(R.id.list_view);
         List<Contact> listContacts = new ArrayList<Contact>();
         Contact c1 = new Contact();
-        c1.setNama("DYP");
-        c1.setNoHP("123");
+        c1.setNama("Dela Youlina P");
+        c1.setNoHP("1202144005");
+        c1.setImageURL("https://maxcdn.icons8.com/Share/icon/Operating_Systems//android_os1600.png");
 
         Contact c2 = new Contact();
-        c2.setNama("DelaYP");
-        c2.setNoHP("123456");
+        c2.setNama("Mahardika Nila K");
+        c2.setNoHP("1202144095");
+        c2.setImageURL("https://maxcdn.icons8.com/Share/icon/Operating_Systems//android_os1600.png");
 
         Contact c3 = new Contact();
-        c3.setNama("Dela Youlina P");
-        c3.setNoHP("123456789");
+        c3.setNama("Satrio Wibowo");
+        c3.setNoHP("1202144179");
+        c3.setImageURL("https://maxcdn.icons8.com/Share/icon/Operating_Systems//android_os1600.png");
 
         listContacts.add(c1);
         listContacts.add(c2);
